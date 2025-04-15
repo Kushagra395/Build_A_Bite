@@ -1,0 +1,81 @@
+/* Explore.css */
+.explore-menu {
+    padding: 20px;
+    padding-left: 10px;
+    background-color: #fff;
+    overflow: hidden;
+  }
+  
+  .explore-menu h1 {
+    justify-content:center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 3.5rem;
+    color: #700f0f;
+    margin-bottom: 0rem;
+
+  }
+  
+  .explore-menu p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    color: #251515;
+    margin-left: 4px;
+    padding-bottom: 3px;
+  }
+  
+  .menu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 20px;
+    align-items: center;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap;
+      /* Prevent wrapping of items */
+     /* Smooth scrolling on touch devices */
+}
+
+.menu-list::-webkit-scrollbar{
+    display: none;
+}
+
+  
+  .item {
+    text-align: center;
+    flex: 0 0 auto;
+    margin-top: 20px;
+  }
+  
+  .item img {
+    width: 150px;
+    height: 150px;
+    cursor:pointer;
+    border-radius: 50%;
+    animation: scrollMenu 8s linear infinite;
+             }
+     
+
+             @keyframes scrollMenu {
+                0% {
+                    transform: translateX(0); /* Start from the original position */
+                }
+                100% {
+                    transform: translateX(-700%); /* Move the container to the left */
+                }
+            }
+
+.item.active img {
+                border: 6px solid #fc593c; /* Orange border for active item */
+                box-shadow: 0 0 10px rgba(252, 89, 60, 0.8); /* Optional: Add a shadow */
+              }
+
+
+.item h2.menu-name{
+    font-size: 1.2rem;
+    font-family:'Times New Roman', Times, serif;
+    animation: scrollMenu 8s linear infinite;
+}
+.ending {
+   margin-top: 30px;
+
+}
