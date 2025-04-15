@@ -1,0 +1,91 @@
+.food-item
+{
+    width: 98%;
+    border-radius: 10px;
+    transition: 0.5s;
+    animation: fadeIn 1s;
+    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.food-item:hover {
+    transform: scale(1.1);
+}
+
+
+.food-item-image
+{
+    border-radius: 10px;
+    width: 300px;
+    height: 220px;
+}
+
+ .food-item-info
+ {
+    padding: 10px;
+    padding-left: 3px;
+    margin-top: 10px;
+ }
+ .food-name-rating
+ {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+ }
+ .food-name-rating p {
+    padding-left: 1px;
+    font-weight: 600;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #441706;
+ }
+ .food-name-rating img {
+    width: 80px;
+ }
+.food-desciption {
+    font-size:14px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(108, 108, 108);
+}
+.food-price {
+    font-size:  20px;
+    font-weight: bold;
+    color: rgb(196, 55, 30);
+    margin: 10px 0px;
+    padding-left: 10px;
+
+}
+.add-remove-button {
+    display: flex;
+     right: 10px;
+     bottom: 8px;
+    position: absolute;
+     border-radius: 50%;
+ }
+  
+  
+  .add-button {
+    border-radius: 50%;
+    cursor: pointer;
+    bottom: 8px;
+  }
+  .add-button:hover{
+    background-color: #c3a5a5;
+  }
+  
+  .remove-button {
+    cursor: pointer;
+    bottom: 8px;
+  }
+  
+  .count {
+    font-size: 18px;
+    font-weight: bold;
+    bottom: 3px;
+    margin: 0px 10px;
+  }
+  .price-addButton {
+   display: flex;
+    position: relative;
+    gap: 180px;
+
+  }
