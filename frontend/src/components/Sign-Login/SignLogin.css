@@ -1,0 +1,116 @@
+.SignLogin {
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: auto;
+    margin: 200px 550px;
+    padding: 20px;
+    padding-top: 0px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+    position:absolute;
+    z-index: 2;
+    animation: fadeIn 0.3s;
+  }
+  .changing-content{
+    place-self: center;
+    display: flex;
+    flex-direction: row;
+ 
+  }
+  .changing-content img {
+   margin-top: 15px;
+    width :20px;
+    height: 20px;
+ margin-left: 170px;
+    
+  }
+  .SignLogin h2{
+    padding-top: 10px;
+    font-weight: 800;
+    font-size: 28px;
+    margin-right: 0px;
+    padding-right: 60px;
+    border-right-width: 0px;
+    padding-bottom: 10px;
+  }
+  .SignLogin form {
+ 
+     
+    align-items: center;
+  }
+  
+  .SignLogin label {
+    margin-bottom: 20px;
+  }
+  
+  .SignLogin input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #3d3d3d6a;
+    border-radius: 5px;
+  }
+  
+  .SignLogin button[type="button"] {
+    background-color:tomato;
+    color: #fff;
+    font-size: large;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding:10px 40px;
+    border: none;
+    margin:auto;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    margin-bottom: 10px;
+  }
+  
+  .SignLogin button[type="button"]:hover {
+    background-color: #d5763f;
+  }
+  
+  .error {
+    color: #f44336;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .terms-checkbox {
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    margin-top:10px ;
+     
+   
+  }
+  .terms-checkbox input[type="checkbox"] {
+    margin-top: 5px;
+    display:list-item;
+    margin-left: -130px;
+}
+  
+  .terms-checkbox label {
+  
+    font-size: 14px;
+    margin-left: -130px;
+    color: #666;
+  }
+  
+  .terms-checkbox a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  .terms-checkbox a:hover {
+    color: #23527c;
+  }
+  .SignLogin span{
+    color: #2775ba;
+  }
+  .SignLogin span:hover{
+    color: #023f73;
+  }
