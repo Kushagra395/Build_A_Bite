@@ -1,0 +1,119 @@
+/* Header.css */
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+  margin: 0; /* Remove default margin */
+  padding: 0;
+   /* Prevent video overflow */
+}
+
+.header-video {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Ensure video is behind the content */
+}
+
+.header-content {
+ 
+ position: 100;
+  z-index: 1; /* Ensure content is above the video */
+  text-align: left;
+  padding: 20px;
+  padding-left: 5px;
+  padding-bottom: 100px;
+  margin-left: 0px;
+  padding-right: 50px;
+  background-color: rgba(255, 255, 255, 0.05); /* Semi-transparent white background */
+  border-radius: 10px; /* Rounded corners */
+  margin: 20px;
+  margin-right: 40px;
+  margin-top: 120px;
+  margin-left: 2px; /* Center the header */
+  max-width: 50%; /* Limit width for better readability */
+  animation: fadeIn 1.5s;
+}
+
+.header h1 {
+  font-weight: bold; /* Make h1 bold */
+  font-size: 6rem;
+  line-height: 1.2;
+  padding-bottom: 0px;
+  font-family: 'Okra', Helvetica, sans-serif; /* Adjust font size as needed */
+  margin-bottom: 0px;
+  color: #121111; /* Darker text color for contrast */
+}
+  .order-text {
+    color: #ffffff; /* Default color for "Order" */
+    opacity: 1; /* Ensure it's visible */
+    transform: translateX(0); /* Start in the original position */
+  }
+
+  .customize-text {
+    color: #fc593c; /* Orange color for "Customize" */
+    opacity: 1; /* Ensure it's visible */
+    transform: translateX(0); /* Start in the original position */
+  }
+ 
+  .toggle-text {
+    display: inline-block; /* Ensure the animation works */
+    font-size: 6rem; /* Make text bigger */
+    transition: opacity 0.5s ease, transform 0.5s ease-in-out;
+    margin-bottom: 0; /* Smooth transition */
+  }
+  
+
+  .food-text {
+    font-size: 6rem; /* Adjust font size for "your food & drinks" */
+    color: #000000;
+    margin-top: 0; /* Default color for "your food & drinks" */
+  }
+  
+  .header p {
+    font-weight:400;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Make p bold */
+    font-size: 2.1rem;
+    margin-top : 3px; /* Adjust font size as needed */
+    margin-bottom: 20px;
+    color: #121111; /* Slightly lighter text color */
+  }
+
+  
+  .button {
+    padding-top:20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px; /* Space between buttons */
+  }
+  
+  .button button {
+    padding: 12px 30px; /* Increase padding for better clickability */
+    margin-left: 15px;
+    font-size: 1.2rem; /* Slightly larger font size */
+    font-weight: bold;
+    color: white; /* White text color */
+    background: linear-gradient(45deg, #e3ccc8, #a15337); /* Gradient background */
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.button button:hover {
+    background: linear-gradient(45deg, #ff8c42, #fc593c); /* Reverse gradient on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.button button:active {
+    transform: translateY(0); /* Reset lift on click */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Reset shadow on click */
+}
