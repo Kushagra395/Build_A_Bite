@@ -8,7 +8,8 @@ import Explore from './components/exploremenu/Explore'
 import Footer from './components/Footer/Footer'
 import SignLogin from './components/Sign-Login/SignLogin'
 
- 
+import Navbar from './components/Navbar'
+
  const App = () => {
   const [showLogin,setShowLogin]=useState(false)
    return (
